@@ -9,17 +9,7 @@ import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: const FirebaseOptions(
-      apiKey: 'AIzaSyBRSWTEWcOK07e_6LaX8RpjwAhyZMUrj2M',
-      appId: '1:278029831412:web:3ddd732fd4726dfb3f62a1',
-      messagingSenderId: '278029831412',
-      projectId: 'empresa-chat-2b2a7',
-      authDomain: 'empresa-chat-2b2a7.firebaseapp.com',
-      storageBucket: 'empresa-chat-2b2a7.firebasestorage.app',
-      measurementId: 'G-TLDWC5DS9G',
-    ),
-  );
+  await Firebase.initializeApp();
   services.init();
   runApp(const EmpresaChat());
 }
@@ -30,7 +20,7 @@ class EmpresaChat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Empresa Chat',
+      title: 'Fasano Live Chat',
       debugShowCheckedModeBanner: false,
       theme: whatsappTheme,
       home: const _AuthGate(),

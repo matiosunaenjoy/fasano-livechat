@@ -73,7 +73,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: 24),
                 const Text(
-                  'Empresa Chat',
+                  'Fasano Live Chat',
                   style: TextStyle(
                     color: Color(0xFFE9EDEF),
                     fontSize: 26,
@@ -83,8 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 8),
                 const Text(
                   'Comunicación interna',
-                  style: TextStyle(
-                      color: Color(0xFF8696A0), fontSize: 14),
+                  style: TextStyle(color: Color(0xFF8696A0), fontSize: 14),
                 ),
                 const SizedBox(height: 48),
                 TextField(
@@ -93,8 +92,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: const TextStyle(color: Color(0xFFE9EDEF)),
                   decoration: const InputDecoration(
                     hintText: 'correo@empresa.com',
-                    prefixIcon: Icon(Icons.email_outlined,
-                        color: Color(0xFF8696A0)),
+                    prefixIcon:
+                        Icon(Icons.email_outlined, color: Color(0xFF8696A0)),
                   ),
                 ),
                 const SizedBox(height: 16),
@@ -108,13 +107,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         color: Color(0xFF8696A0)),
                     suffixIcon: IconButton(
                       icon: Icon(
-                        _obscure
-                            ? Icons.visibility_off
-                            : Icons.visibility,
+                        _obscure ? Icons.visibility_off : Icons.visibility,
                         color: const Color(0xFF8696A0),
                       ),
-                      onPressed: () =>
-                          setState(() => _obscure = !_obscure),
+                      onPressed: () => setState(() => _obscure = !_obscure),
                     ),
                   ),
                 ),
@@ -140,8 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(height: 32),
                 const Text(
                   'Solo para empleados autorizados',
-                  style: TextStyle(
-                      color: Color(0xFF8696A0), fontSize: 12),
+                  style: TextStyle(color: Color(0xFF8696A0), fontSize: 12),
                 ),
               ],
             ),
